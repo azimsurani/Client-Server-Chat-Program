@@ -12,7 +12,7 @@ s.listen(1)
 
 while True:
     c, address = s.accept()
-    c.send("Hii From Server".encode('ascii'))
+    c.send("Hii".encode('ascii'))
     while True:
         print('Client : ', end='')
         msg = c.recv(1024).decode('ascii')
